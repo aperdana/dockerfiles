@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+      "Dockerfile.*": "dockerfile"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n"
+  }

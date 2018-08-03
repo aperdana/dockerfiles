@@ -1,0 +1,10 @@
+FROM golang:1.10.2 AS builder
+
+ARG DEP_VERSION="v0.4.1"
+
+LABEL go_version="v1.10.2"
+LABEL dep_version="${DEP_VERSION}"
+LABEL description="go+dep docker image"
+
+RUN wget -O /usr/local/bin/dep https://github.com/golang/dep/releases/download/${DEP_VERSION}/dep-linux-amd64 && \
+    chmod +x /usr/local/bin/dep
